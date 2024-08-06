@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helen Espinal">
+    <meta name="description" content="W3 Demo | Mainframes">
     <title>W3 | Multi-Page Bio</title>
 
     <style>
@@ -10,6 +12,21 @@
             border:1px solid black;
             padding:10px;
             margin:10px;
+        }
+         /*select elements by #ID - applies ONLY to element with that ID*/
+         #wrapper {
+            background-color:grey;
+            width:900px;
+            margin:auto; /*centers element in page; auto equal left + right space*/
+        }
+
+        /*select elements by .CLASS - applies only to elements with that CLASS*/
+        .border {
+            border:2px solid maroon;
+        }
+
+        #nav {
+            border:2px solid black;
         }
     </style>
 </head>
@@ -25,6 +42,11 @@
       
         <!-- NAV DIV -->
         <div id="nav">
+            <a href="index.html">| HOME |</a>
+            <a href="hobbies.html">| HOBBIES |</a>
+            <a href="schools.html">| SCHOOLS |</a>
+            <a href="#footer">| Jump to Bottom |</a>
+
 
             <h3><a href="https://github.com/Helens-World/SE111_202440" target ="_blank"> Visit my Github</a></h3>
 
@@ -42,7 +64,7 @@
         <div id="footer" class="bg">
 
             <p>&copy; Helen Espinal | SE111 | 202440</p>
-
+            <a href="index.html#header">| Top of HOME Page |</a>
         </div><!--/#footer-->
 
     </div><!--/ #wrapper-->
