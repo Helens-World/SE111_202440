@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helen's World</title>
+</head>
+<style>
+    div {
+        border:1px solid black;
+        padding:10px;
+        margin:10px;
+    }
+     /*write CSS in here*/
+
+    /*select elements by TYPE - applies to all tags of that type*/
+    div {
+        border:1px solid black;
+        padding:10px;
+        margin:5px;
+    }
+
+    /*select elements by #ID - applies ONLY to element with that ID*/
+    #wrapper {
+        background-color:grey;
+        width:900px;
+        margin:auto; /*centers element in page; auto equal left + right space*/
+    }
+
+    /*select elements by .CLASS - applies only to elements with that CLASS*/
+    .border {
+        border:2px solid maroon;
+    }
+
+    #nav {
+        border:2px solid black;
+    }
+    #center-pic {
+        margin-left: auto;
+        margin-right: auto;
+        /*add center styling here!*/
+    }
+</style>
+</head>
+<body>
+<!-- WRAPPER DIV -->
+<div id="wrapper">
+    <!-- HEADER DIV -->
+    <div id="header" class="bg">
+
+        <h1> Welcome to Helen's World!</h1>
+
+    </div><!--/ #header-->
+  
+    <!-- NAV DIV -->
+    <div id="nav">
+        <a href="index.html">| HOME |</a>
+        <a href="hobbies.html">| HOBBIES |</a>
+        <a href="schools.html">| SCHOOLS |</a>
+        <a href="#footer">| Jump to Bottom |</a>
+
+
+        <h3><a href="https://github.com/Helens-World/SE111_202440" target ="_blank"> Visit my Github</a></h3>
+
+    </div><!--/#nav-->
+           
+    <!-- MAIN CONTENT DIV-->
+    <div id="main-content">
+        <img src="images/barbados.jpg" alt="A summer in Bridgetown, Barbados"
+        style="width:90%" id="center-pic">
+
+
+        <h2> Bio | A Little bit About Me</h2>
+        <p style="text-indent: 25px;">My name is <strong>Helen Espinal</strong>. I was born in Providence, RI as the youngest of two other siblings. As the baby of the house, it came with privileges I relished. 
+        Never getting in trouble for fights I <b>most definitely</b> started and could never finish. Saying the first intrusive thought that came to mind, and due to my charming nature, it was most likely ignored as a cute, childish quirk. 
+     I spent the majority of my formative years being an <i>absolute curse</i> on my siblings. I can say now it has made them better people.
+        <p style="text-indent: 25px;">My parents are immigrants from the Dominican Republic, a fact they never fail to remind me of on countless visits to their country and unwarranted speeches on how hard their sacrifices were and 
+        how I must appreciate the education they never recieved. 
+     An advantage of my parents' descent is the knowledge of another world including their native language of Spanish. 
+        This knowledge has made me appreciative of my culture and relieved I can communicate with my family outside of the U.S. 
+        </p>
+
+        
+
+    </div><!--/#main-content-->
+
+    <!-- FOOTER DIV -->
+    <div id="footer" class="bg">
+
+       
+        <a href="index.html#header">| Top of HOME Page |</a>
+        <p>&copy; Helen Espinal | SE111 | 202440</p>
+
+    </div><!--/#footer-->
+
+</div><!--/ #wrapper-->
+</body>
+</html>
+    
+

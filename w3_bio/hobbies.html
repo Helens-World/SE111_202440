@@ -11,6 +11,30 @@
             padding:10px;
             margin:10px;
         }
+         /*write CSS in here*/
+
+        /*select elements by TYPE - applies to all tags of that type*/
+        div {
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        /*select elements by #ID - applies ONLY to element with that ID*/
+        #wrapper {
+            background-color:grey;
+            width:900px;
+            margin:auto; /*centers element in page; auto equal left + right space*/
+        }
+
+        /*select elements by .CLASS - applies only to elements with that CLASS*/
+        .border {
+            border:2px solid maroon;
+        }
+
+        #nav {
+            border:2px solid black;
+        }
     </style>
 </head>
 <body>
@@ -28,43 +52,42 @@
             <a href="index.html">| HOME |</a>
             <a href="hobbies.html">| HOBBIES |</a>
             <a href="schools.html">| SCHOOLS |</a>
-            
-    
+            <a href="#footer">| Jump to Bottom |</a>
+
+
             <h3><a href="https://github.com/Helens-World/SE111_202440" target ="_blank"> Visit my Github</a></h3>
 
         </div><!--/#nav-->
                
         <!-- MAIN CONTENT DIV-->
         <div id="main-content">
-            <h4> FAVORITE WAYS TO SPEND TIME</h4>
-         <!-- ADD IMAGE HERE -->
+            <h2> FAVORITE WAYS TO SPEND TIME</h4>
+    <!-- ADD IMAGE HERE -->
 
-        <ol> 
+    <ol> 
         
-            <li> Reading books</li>
-            <li> Listening to music</li>
-            <li> Watching movies </li>
-            <li> Night walks</li>
-            <li> Playing piano</li>
-            <li> Traveling</li>
+        <li> Reading books</li>
+        <li> Baking</li>
+        <li> Watching movies </li>
+        <li> Night walks</li>
+        <li> Playing piano</li>
+        <li> Traveling</li>
     <br>
     <br>
-    <img src="images/flamingomovies.jpg" alt="Watching movies with Flamingo"
+    <img src="images/baking.jpg" alt="Baking Strawberry Cheesecakes!"
     width="300"
     height="400">
-    <p> <em> Watching movies with Flamingo.</em></p>
-    <img src="images/painting.jpg" alt="Painting in the fall"
-    width="300"
-    height="350">
-    <p><em>Painting in the fall.</em></p>
-
+    <p> <em> Baking strawberry cheesecakes!</em></p>
+   
+          
             
-            <!-- add content here </p> -->
 
         </div><!--/#main-content-->
 
         <!-- FOOTER DIV -->
         <div id="footer" class="bg">
+
+           
             <a href="index.html#header">| Top of HOME Page |</a>
             <p>&copy; Helen Espinal | SE111 | 202440</p>
 
