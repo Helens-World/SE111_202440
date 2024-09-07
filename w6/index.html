@@ -20,24 +20,19 @@
 
 
     <!--In-Document Javascript Element at END of HTML content, before the body close-->
-    <script>8
+    <script>
 
         
         //single line comment in JS 
         
         //create some variables --> JS requires DECLARATION: keyword 'var'
-        var num1 = 10
-        var num2 = 27
+        //var num1 = 10
+       // var num2 = 27
 
    
-        var sum = num1 + num2
+       // var sum = num1 + num2
 
-        //console.log() -- used for development; NOT for a user
-       // console.log(sum)
-       // console.log(num1, num2,)
-       // console.log("The sum of ", num1, " + ", num2, " is ", sum)
-       // console.log(`The sum of ${num1} + ${num2} is ${sum.toFixed(2)}`)
-
+       
         //alert() allows for a pop-up in the browser page to display data
         //alert() --> OUTPUT to user [print()]
         //alert(`Hello World!\nThe sum is $${sum.toFixed(2)}`)
@@ -54,25 +49,27 @@
         alert(`Hi there ${name}!`)
 
         //---------------------------------------------------------------
-        var hours = Number(prompt(`Enter your hours worked: `))
 
-        var gross = hours * 15
-        console.log(product)
-        console.log(hours, 15,)
-        console.log(" The product of ", hours, "*", 15, "is", gross )
+        // Ask User for Info (don't forget to convert strings to numbers by using Number() )
+        var hourly_pay = Number(prompt(`Enter your hourly wage: `))
+        var hours = Number(prompt(`Enter your hours worked in the course of 2 weeks: `))
         
+
+
+        var gross = hours * hourly_pay
         var taxA = gross * 0.2
         var net = gross - taxA
-        alert(`Grosspay = $${gross.toFixed(2)} \nTax Amount = $${taxA.toFixed(2)} \nNet Pay = $${net.toFixed(2)}`)
-        console.log(`alert complete.`)
-         //   console.log(multi)
-          //  console.log(gross, 0.2)
-         //   console.log(" The product of ", gross, "*", 0.2, "is", taxA )
-       
-           // console.log(subtract)
-          //  console.log(gross, taxA)
-          //  console.log(" The difference of ", gross, "-", taxA, "is", net)
 
+        // three console logs
+        console.log(`${hours.toFixed(1)} * ${hourly_pay.toFixed(2)} = $${gross.toFixed(2)}`)
+        console.log(`${gross.toFixed(2)} * 0.2 = $${taxA.toFixed(2)}`)
+        console.log(`${gross.toFixed(1)} - ${taxA.toFixed(2)} = $${net.toFixed(2)}`)
+
+
+        // OUTPUT / DISPLAY 
+        alert(`Grosspay: $${gross.toFixed(2)} \nUncle Sam's Share: $${taxA.toFixed(2)} \nNet Pay: $${net.toFixed(2)}`)
+        console.log(`alert complete.`)
+        
        
 
         
@@ -86,27 +83,26 @@
        
 
 
-        //CONDITIONS in JAVASCRIPT
-
-       // var num = Number(prompt(`Enter a number: `))
-
-      //  if (num % 2 === 0)
-      //  {
-        // alert(`The number is EVEN!`)
-      //  }
-      //  else 
-      //  {
-      //      alert(`The number is ODD!`)
-       // }
-
-      //  function hello() 
-      //  {
-        //  console.log(`button clicked!`)
-         //   alert(`Hello World!`)
-      //  }
-
-
+       
     </script>
-    
+    <style>
+        #main-image {
+            width: 850px 
+
+        }
+
+
+
+    </style>
+
+    <div id="footer">
+
+        <img src="images/w6-pay-calc-validator.png" alt="Week 6 | Javascript Pay Calc Validator SS" id="main-image">
+        
+        <p>&copy; HELEN ESPINAL | SE111.02 | 202440</p>
+
+        <br>
+        <br>
+        <br>
 </body>
 </html>
