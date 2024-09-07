@@ -12,15 +12,15 @@
 <body>
 
     <!--include some bit of HTML elements when first getting started-->
-    <h1>Week 6 Intro Demo | Javascript</h1>
-    <h3><i>Review the In-Document script via Browser Dev Tools panel [F12]</i></h3>
+    <h1>Week 6 | Pay Calculator | Javascript</h1>
+    <h4><i>Review the In-Document script via Browser Dev Tools panel [F12]</i></h4>
 
     <!--show use of button element with onclick event for function calls-->
-    <button onclick="hello()">Say Hi :]</button>
+   <!--- <button onclick="hello()">Say Hi :]</button> -->
 
 
     <!--In-Document Javascript Element at END of HTML content, before the body close-->
-    <script>
+    <script>8
 
         
         //single line comment in JS 
@@ -57,15 +57,27 @@
         var hours = Number(prompt(`Enter your hours worked: `))
 
         var gross = hours * 15
+        console.log(product)
+        console.log(hours, 15,)
+        console.log(" The product of ", hours, "*", 15, "is", gross )
+        
         var taxA = gross * 0.2
         var net = gross - taxA
-
-        console.log(" The product of ", hours, "*", 15, "is", gross )
-        console.log(" The product of ", gross, "*", 0.2, "is", taxA )
-        console.log(" The difference of ", gross, "-", taxA, "is", net)
-        alert(`Grosspay = $${gross.toFixed(2)}\n Tax Amount = $${taxA.toFixed(2)}\n 
-        Net Pay = $${net.toFixed(2)}`)
+        alert(`Grosspay = $${gross.toFixed(2)} \nTax Amount = $${taxA.toFixed(2)} \nNet Pay = $${net.toFixed(2)}`)
         console.log(`alert complete.`)
+         //   console.log(multi)
+          //  console.log(gross, 0.2)
+         //   console.log(" The product of ", gross, "*", 0.2, "is", taxA )
+       
+           // console.log(subtract)
+          //  console.log(gross, taxA)
+          //  console.log(" The difference of ", gross, "-", taxA, "is", net)
+
+       
+
+        
+
+        
              
     
     
@@ -76,22 +88,22 @@
 
         //CONDITIONS in JAVASCRIPT
 
-        var num = Number(prompt(`Enter a number: `))
+       // var num = Number(prompt(`Enter a number: `))
 
-        if (num % 2 === 0)
-        {
-            alert(`The number is EVEN!`)
-        }
-        else 
-        {
-            alert(`The number is ODD!`)
-        }
+      //  if (num % 2 === 0)
+      //  {
+        // alert(`The number is EVEN!`)
+      //  }
+      //  else 
+      //  {
+      //      alert(`The number is ODD!`)
+       // }
 
-        function hello() 
-        {
-            console.log(`button clicked!`)
-            alert(`Hello World!`)
-        }
+      //  function hello() 
+      //  {
+        //  console.log(`button clicked!`)
+         //   alert(`Hello World!`)
+      //  }
 
 
     </script>
