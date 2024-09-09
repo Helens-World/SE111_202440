@@ -54,8 +54,10 @@
             <!---NOTES FOR TESTING:
                     *below is where the form values (and new values processed by the js) will be displayed-->
             <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
-           <!-- alert('First Name: ${fname} \nLast Name: ${lname} \nRate: ${rate} \nHours: ${hours}') 
-                Do i use first and last var or fname and lname? 
+             
+
+                
+            <!-- Do i use first and last var or fname and lname? -->
     
         </div>
 
@@ -75,7 +77,7 @@
         //edit the below statement to select the #enter-button id from the HTML file
         document.querySelector(#enter-button).addEventListener(`click`, alertName) // select by tag name 
         
-        console.log(enter-button) //testing in browser console 
+        //testing in browser console 
         
         //alertName(e) functiond definition is below - must include e/ev/event
         //requires the 'e' parameter to hold event data
@@ -115,10 +117,13 @@
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
+            info.innerHTML += `<p><br>Full Name: ${full} <br> Hours Worked: ${hours} <br> Hourly Rate: ${rate}</p>`
+          
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             
+            var gross = 
 
             //console.log() all three processed values, rounded to the second decimal place
             console.log(.toFixed(2))
