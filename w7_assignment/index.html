@@ -11,7 +11,7 @@
 <body>
 
     <!--title of the page-->
-   <h1> W8 | Pay Calculator Form </h1>
+   <h1> W7 | Pay Calculator Form </h1>
 
    <!--start of the form-->
    <!--each <input> must have an id that matches its corresponding label -->
@@ -54,6 +54,9 @@
             <!---NOTES FOR TESTING:
                     *below is where the form values (and new values processed by the js) will be displayed-->
             <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
+           <!-- alert('First Name: ${fname} \nLast Name: ${lname} \nRate: ${rate} \nHours: ${hours}') 
+                Do i use first and last var or fname and lname? 
+    
         </div>
 
         <br>
@@ -67,11 +70,15 @@
     </form>
 
     <script>
+        //set up an actionable event so that when a button is clicked, information is written to the page. FIRST: add event listener for event (action)
+        //adding an event listern to the #enter-button at end of the mini form
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector().addEventListener(`click`, alertName)
+        document.querySelector(#enter-button).addEventListener(`click`, alertName) // select by tag name 
         
+        console.log(enter-button) //testing in browser console 
         
-
+        //alertName(e) functiond definition is below - must include e/ev/event
+        //requires the 'e' parameter to hold event data
         function alertName(e)
         {
             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
@@ -82,24 +89,29 @@
             hours --> hours worked, #hours
             rate --> hourly rate, #rate */
             
+            var fname = document.querySelector(`#first`).value 
+            var lname = document.querySelector(`#last`).value
+            var hours = document.querySelector(`#hours`).value
+            var rate = document.querySelector(`#rate`).value
 
 
             //console.log() all four values
             
-            console.log()
-            console.log()
-            console.log()
-            console.log()
+            console.log(fname)
+            console.log(lname)
+            console.log(hours)
+            console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
-            var full 
+            var full = first + last 
 
             //console.log() the full name value
-            console.log()
+            console.log(full)
 
 
             //convert both hours and rate to Number() data types
-            
+            hours = Number(hours)
+            rate = Number(rate)
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
