@@ -36,15 +36,12 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		var first = first 
-		var last = last 
-		var button = button 
-
+		var first = document.querySelector(`#first`) 
+		var last = document.querySelector(`#last`) 
+		var button = document.querySelector(`#button`) 
 		//Make an array to store the people
 		var people = [
-			person0, 
-			person1, 
-			person2
+			
 		]
 		console.log(people)
         console.log(people[0])
@@ -52,7 +49,7 @@
 
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		document.querySelector(`#enter-button`).addEventListener(`click`, calcAndDisplay)
+		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
 
 
 		
@@ -69,33 +66,13 @@
 			FIRST: Daenerys
 			LAST: Targaryen
 			_________________________
+
+
 		--------------------------------------------------------*/
-		var person0 = {
-			first: `Cersei`,
-			last: `Lannister`
+		
 
-
-		}
-		//view all data within the object [processing a data structure]
-		for(let key in person0){
-            //"for property in object"
-            console.log(`${key}: ${person0[key]}`)
-		}
-
-		var person1 = {
-			first: `Arya`,
-			last: `Stark`
-
-
-		}
-		var person2 = {
-			first: `Daenerys`,
-			last: `Targaryen`
-
-		}
-		console.log(person0)
-		console.log(person1)
-		console.log(person2)
+		
+		
 
 		
 		function calcAndDisplay(e)
@@ -106,8 +83,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first: `${first}`,
-				last:  `${last}` 
+				first: first.value,
+				last: last.value 
 
 
 
@@ -135,32 +112,34 @@
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
 			
-			console.log(people)//NEED HELP W/ CONSOLE LOG WINDOW ON MAC 
+			console.log(people[0])//NEED HELP W/ CONSOLE LOG WINDOW ON MAC 
 
 			//create a variable called 'output' that has an empty string value stored to it
 			var output = ''
 
 			//Loop through the objects in the people array
-			for(let i = 0; i)
+			for(let i = 0; i <people.length; i++)
             {
 
 				//Loop through each property in the object
-				for(key in people[i])
-                {
+				for(let key in people[i])
+				{
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
+					output += `<p><b>${key.toUpperCase()}</b>: ${people[i][key]}</p>`
 
                 }
-                //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				<hr> </hr> 
+					console.log(`INFO FOR ${people[i].first}:`)
+                
+                	//add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
+					output += `<hr>`
 				
 
 
 			}//end of loop going through people array to edit 'output'
-				
+				document.querySelector(`#output`).innerHTML = output
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
